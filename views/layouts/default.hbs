@@ -3,22 +3,36 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Team Cloud Titan Website</title>
+  <title>Team Cloud Titans Website</title>
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 </head>
 <body>
-  <div>
-      <h1>Welcome to Cloud Titan'S application</h1>
-    {{{body}}}
+  <div class="text-center">
+        <marquee style="background-color:powderblue;"><h1 style="color:blue;">Welcome to Cloud Titans's application</h1></marquee>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <p style="color: blue; font-size:150%;"><i>This is a page for all fun events you can attend!</i>
+              </p>
+   </div>
+    <div>
+     <h2 style="color: teal; font-size: 100%;" >
+     <img src="https://raw.githubusercontent.com/meenalj/cloudexternal/master/images/cloud-titans_wide.jpg" alt="github.com"  style="float:right;width:500px;height:450px;">
+      {{{body}}}
+     </h2>
+  </div>
 </div>
 <div>
-  <h2>Add an event</h2>
-    <form action="/event" method="post">
-       title: <input name="title" type="text" /> <br />
-       description: <input name="description" type="text" /> <br />
+ <h3 style="color:blue;font-size:150%;background-color:powderblue;margin: 30px;", class="text-center"><i>Here is where you can add your own event</i></h3>
+</div>
+<div>
+     <form action="/event" method="post">
+     <p style ="margin:10px;color:blue;">
+       <i>What is your event called? </i>: <input name="title" type="text" /> <br />
+       <i>Tell us more about it</i>: <input name="description" type="text" /> <br />
+       <i>Where is it being hosted?</i>:<input name="location" type="text" /> <br />
        <br />
-        <input type="submit" name="submit" value="submit" />
+        <input type="submit" name="submit" value="Submit Details" />
+     </p> 
     </form>
   </div>
 </body>
