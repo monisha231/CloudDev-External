@@ -1,9 +1,19 @@
 <ul >
   {{#events}}
     <li>
-        <h2 style="color:pink"/>{{ title }}</h2>
+        <h2 style="color:blue"/>{{ title }}</h2>
         <p>{{ description }}</p>
-        <p>{{ location }}</p>
-    </li>
+        <p>{{ location }}</p> 
+    <script type="text/javascript">
+    var clicks = 0;
+    function onClick() {
+        clicks += 1;
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+    </script>
+    <a style="cursor: pointer;" onClick="onClick()">Like</a>
+    <a id="clicks">0</a>
+ 
+    </li>  
   {{/events}}
 </ul>
