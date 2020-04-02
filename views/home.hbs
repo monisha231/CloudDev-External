@@ -5,15 +5,24 @@
         <p style="color:white;font-family:calibri">{{ description }}</p>
         <p style="color:white;font-family:calibri">{{ location }}</p> 
     <script type="text/javascript">
-    var clicks = 0;
-    function onClick() {
-        clicks += 1;
-        document.getElementById("clicks").innerHTML = clicks;
-    };
-    </script>
-    <a style="cursor: pointer;" onClick="onClick()">Like</a>
-    <a id="clicks">0</a>
- 
+
+    // var clicks = 0;
+    //function onClick() {
+      //  clicks += 1;
+        //document.getElementById("clicks").innerHTML = clicks;
+    //};
+    //</script>
+    //<a style="cursor: pointer;" onClick="onClick()">Like</a>
+    //<a id="clicks">0</a>-->
+    
+    <!-- LikeBtn.com BEGIN -->
+<span class="likebtn-wrapper" data-identifier="item_1"></span>
+<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;
+a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;
+a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");
+</script>
+<!-- LikeBtn.com END -->
+
     </li>  
   {{/events}}
 </ul>
